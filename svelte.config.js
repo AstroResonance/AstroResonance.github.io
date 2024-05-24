@@ -8,6 +8,14 @@ const config = {
 		}),
 		paths: {
 			base: '/AstroResonance.github.io'
+		},
+		prerender: {
+			handleHttpError: ({ path, referrer, message }) => {
+				if (path.startsWith('/AstroResonance.github.io/')) {
+					return;
+				}
+				throw new Error(message);
+			}
 		}
 	}
 };
