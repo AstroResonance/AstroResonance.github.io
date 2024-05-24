@@ -1,4 +1,5 @@
 import adapter from '@sveltejs/adapter-auto';
+import {process} from "svelte-check/dist/src/svelte-shims.js";
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
