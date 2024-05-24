@@ -11,7 +11,7 @@
 		</svg>
 		<ul>
 			<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
-				<a href="/old/static">Home</a>
+				<a href="/">Home</a>
 			</li>
 
 			<li aria-current={$page.url.pathname === '/about' ? 'page' : undefined}>
