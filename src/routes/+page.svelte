@@ -1,6 +1,7 @@
 <script>
 	import AR from '$lib/images/astro-resonance.png';
 	import '@fortawesome/fontawesome-free/css/all.css'
+	import {base} from '$app/paths'
 </script>
 
 <svelte:head>
@@ -12,8 +13,8 @@
 	<h1>
 		<span class="intro">
 			<picture>
-				<source srcset={AR} type="image/astro-resonance.png" />
-				<img src={AR} alt="AR" />
+				<source srcset={base + AR} type={base + "image/astro-resonance.png" }/>
+				<img src={base + AR} alt="AR" />
 			</picture>
 		</span>
 
