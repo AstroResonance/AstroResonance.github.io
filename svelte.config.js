@@ -7,7 +7,7 @@ const config = {
 			fallback: 'index.html'
 		}),
 		paths: {
-			base: process.argv.includes('dev') ? '' : '/AstroResonance.github.io'
+			base: process.env.NODE_ENV === 'production' ? '/AstroResonance.github.io' : ''
 		}
 	}
 };
