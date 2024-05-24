@@ -5,7 +5,7 @@
 
 <div class="text-column">
 	<h1>
-		<img src='aboutme.png' alt="About me Photo">
+		<img src='/aboutme.png' alt="About me Photo">
 	</h1>
 
 	<h2>

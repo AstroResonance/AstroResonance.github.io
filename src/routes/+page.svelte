@@ -13,7 +13,7 @@
 	<h1>
 		<span class="intro">
 			<picture>
-				<source srcset={AR} type="image/astro-resonance.png" />
+				<source srcset={AR} type="/image/astro-resonance.png" />
 				<img src={AR} alt="AR" />
 			</picture>
 		</span>

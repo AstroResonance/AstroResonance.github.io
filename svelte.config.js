@@ -1,27 +1,15 @@
-import preprocess from 'svelte-preprocess';
 import adapter from '@sveltejs/adapter-static';
 
-const dev = process.env.NODE_ENV === 'development';
-
-export default {
+/** @type {import('@sveltejs/kit').Config} */
+const config = {
 	kit: {
 		adapter: adapter({
-			pages: 'build',
-			assets: 'build',
-			fallback: null
+			fallback: 'index.html'
 		}),
 		paths: {
-			base: dev ? '' : '/AstroResonance.github.io'
-		},
-		prerender: {
-			handleHttpError: ({ path, referrer, message }) => {
-				if (path.startsWith('/AstroResonance.github.io/')) {
-					return;
-				}
-				throw new Error(message);
-			}
+			base: '/AstroResonance.github.io'
 		}
-	},
-
-	preprocess: preprocess()
+	}
 };
+
+export default config;
