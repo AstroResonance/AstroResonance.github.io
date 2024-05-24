@@ -1,7 +1,3 @@
-<script>
-	import { base } from '$app/paths'
-</script>
-
 <svelte:head>
 	<title>About Me</title>
 	<meta name="Astro Resonance" content="About me!" />
@@ -9,7 +5,7 @@
 
 <div class="text-column">
 	<h1>
-		<img src={base + 'aboutme.png'} alt="About me Photo">
+		<img src='aboutme.png' alt="About me Photo">
 	</h1>
 
 	<h2>
